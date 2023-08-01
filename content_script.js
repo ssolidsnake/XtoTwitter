@@ -26,13 +26,15 @@ const XtoT=(function(){
 				elxx=document.getElementsByClassName("r-k200y r-18jsvk2 r-4qtqp9 r-yyyyoo r-5sfk15 r-dnmrzs r-kzbkwu r-bnwqim r-1plcrui r-lrvibr");
 				elxxx=document.getElementsByClassName("r-jwli3a r-4qtqp9 r-yyyyoo r-labphf r-1777fci r-dnmrzs r-494qqr r-bnwqim r-1plcrui r-lrvibr");
 				elxxxx=document.getElementsByClassName("u01b__icon-home");
-				i=j=k=l=m=0;
-				while(i<xel.length||j<elx.length||k<elxx.length||l<elxxx.length||m<elxxxx.length){
+				elxxxxx=document.getElementsByClassName("r-18jsvk2 r-4qtqp9 r-yyyyoo r-16y2uox r-8kz0gk r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp");
+				i=j=k=l=m=n=0;
+				while(i<xel.length||j<elx.length||k<elxx.length||l<elxxx.length||m<elxxxx.length||n<elxxxxx.length){
 					eli=(typeof xel[i]!=="undefined")?xel[i]:null;
 					elj=(typeof elx[j]!=="undefined")?elx[j]:null;
 					elk=(typeof elxx[k]!=="undefined")?elxx[k]:null;
 					ell=(typeof elxxx[l]!=="undefined")?elxxx[l]:null;
 					elm=(typeof elxxxx[m]!=="undefined")?elxxxx[m]:null;
+					eln=(typeof elxxxxx[n]!=="undefined")?elxxxxx[n]:null;
 					if(eli!==null)
 						xel[i].innerHTML=xel[i].innerHTML.replace(pathX,pathT);
 					if(elj!==null)
@@ -43,7 +45,9 @@ const XtoT=(function(){
 						elxxx[l].innerHTML=elxxx[l].innerHTML.replace(pathX,pathT);
 					if(elm!==null)
 						elxxxx[m].innerHTML=elxxxx[m].innerHTML.replace(pathX,pathT2);
-					i++,j++,k++,l++,m++;
+					if(eln!==null)
+						elxxxxx[n].innerHTML=elxxxxx[n].innerHTML.replace(pathX,pathT);
+					i++,j++,k++,l++,m++,n++;
 				}
 				setTimeout(function(){
 					pathXToT();
